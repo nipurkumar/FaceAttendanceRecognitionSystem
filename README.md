@@ -4,31 +4,6 @@ A smart, modular, and full-stack web-based _Face Recognition Attendance System_ 
 
 ---
 
-## 📁 Project Structure
-
-FRAS/
-├── backend/
-│ ├── utils/ # Facial encoding and processing
-│ ├── models/ # MongoDB models/schemas (if using ODM like MongoEngine)
-│ ├── app.py # Flask app entry point
-│ ├── database.py # MongoDB connection logic
-│ ├── requirements.txt # Python dependencies
-│ └── init.py
-├── data/
-│ ├── attendance_logs/ # Exported attendance files (CSV or JSON)
-│ ├── database/ # MongoDB (for local dev) or configs
-│ ├── registered_faces/ # Saved face images
-│ └── init.py
-├── frontend/
-│ ├── assets/ # Images, videos, logos
-│ ├── css/ # Stylesheets
-│ ├── js/ # Frontend JavaScript
-│ ├── index.html # Landing page
-│ └── README.md # UI-specific documentation
-├── venv/ # Python virtual environment
-
----
-
 ## 🚀 Features
 
 - 🔍 Face detection using face_recognition and OpenCV
