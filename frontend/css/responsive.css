@@ -1,0 +1,185 @@
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .register-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  nav {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgba(10, 25, 47, 0.98);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 50px 0;
+    height: 100vh;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+
+  .register-container {
+    padding: 20px;
+  }
+
+  .camera-feed {
+    height: 300px;
+  }
+
+  .live-feed img {
+    height: 300px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  /* Testimonials */
+  .testimonial {
+    padding: 30px 20px;
+  }
+
+  .testimonial p {
+    font-size: 1rem;
+  }
+
+  /* Padding adjustments */
+  .features,
+  .how-it-works,
+  .register-section,
+  .dashboard,
+  .testimonials {
+    padding: 60px 0;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .step {
+    padding: 30px 20px;
+  }
+
+  .form-group input {
+    padding: 12px;
+  }
+
+  .capture-btn,
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Landscape Mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    padding: 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
